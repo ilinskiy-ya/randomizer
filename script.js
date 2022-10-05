@@ -25,19 +25,21 @@ var randomInsult = random1 + " " + random2+ " " + random3 +
 " " + random4+ " " + random5 ;
 
 
-const myButtons = document.querySelector('#myButtons');
-const list = document.querySelector('#list');
+let myButtons = document.querySelector('#myButtons');
+let list = document.querySelector('#list');
 
 myButtons.addEventListener('click', function() {
-    const newItem = document.createElement('li');
+    let newItem = document.createElement('li');
     newItem.classList.add('item');
     newItem.textContent = randomInsult;
  
-    const deleteButton = document.createElement('button');
+    let deleteButton = document.createElement('button');
     deleteButton.textContent = 'плохой вариант';
 
     deleteButton.addEventListener('click', function() {
         list.removeChild(newItem);
+       //randomInsult = undefined;  //работает, но не так хотел
+       document.location.reload();
     })
 
     newItem.appendChild(deleteButton);
@@ -45,3 +47,4 @@ myButtons.addEventListener('click', function() {
 
     
 });
+
