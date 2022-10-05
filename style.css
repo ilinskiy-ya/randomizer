@@ -3,6 +3,7 @@
     min-width: 100vh;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -33,9 +34,15 @@
 }
 
 .item {
-    margin: 5px 0;
+    margin: 5% 30% 0 30%;
+    transition: 0.5s; 
 }
 
 .item button {
-    margin-left: 5px;
+  transition: 0.5s; 
 } 
+
+.list {
+  list-style: none;
+  
+}

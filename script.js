@@ -26,23 +26,21 @@ var randomInsult = random1 + " " + random2+ " " + random3 +
 
 
 const myButtons = document.querySelector('#myButtons');
- 
-myButtons.addEventListener('click', function() {
-    window.alert(randomInsult);
-})
 
 
 const myButton = document.querySelector('#myButton');
 const nameInput = document.querySelector('#nameInput');
 const list = document.querySelector('#list');
 
-myButton.addEventListener('click', function() {
+
+
+myButtons.addEventListener('click', function() {
     const newItem = document.createElement('li');
     newItem.classList.add('item');
-    newItem.textContent = nameInput.value;
-
+    newItem.textContent = randomInsult;
+ 
     const deleteButton = document.createElement('button');
-    deleteButton.textContent = 'удалить';
+    deleteButton.textContent = 'плохой вариант';
 
     deleteButton.addEventListener('click', function() {
         list.removeChild(newItem);
@@ -51,7 +49,5 @@ myButton.addEventListener('click', function() {
     newItem.appendChild(deleteButton);
     list.appendChild(newItem);
 
-    nameInput.value = '';
+    
 });
-
- 
