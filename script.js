@@ -26,13 +26,7 @@ var randomInsult = random1 + " " + random2+ " " + random3 +
 
 
 const myButtons = document.querySelector('#myButtons');
-
-
-const myButton = document.querySelector('#myButton');
-const nameInput = document.querySelector('#nameInput');
 const list = document.querySelector('#list');
-
-
 
 myButtons.addEventListener('click', function() {
     const newItem = document.createElement('li');
