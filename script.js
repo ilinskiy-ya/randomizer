@@ -32,7 +32,8 @@ myButtons.addEventListener('click', function() {
     let newItem = document.createElement('li');
     newItem.classList.add('item');
     newItem.textContent = randomInsult;
- 
+    this.style.color='red';
+   // this.style.textContent='Сгенино';
     let deleteButton = document.createElement('button');
     deleteButton.textContent = 'плохой вариант';
 
