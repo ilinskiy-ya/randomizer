@@ -32,14 +32,19 @@ myButtons.addEventListener('click', function() {
     let newItem = document.createElement('li');
     newItem.classList.add('item');
     newItem.textContent = randomInsult;
-    this.style.color='red';
-   // this.style.textContent='Сгенино';
-    let deleteButton = document.createElement('button');
-    deleteButton.textContent = 'плохой вариант';
+    newItem.appendChild;
+    //this.style.color='red';
+    //this.style.background='black';
+    this.style.display= "none";    
+    //document.getElementById("myButtons").textContent= "GOTOVO"; 
+          
+    let deleteButton = document.createElement('button'); 
+    deleteButton.classList.add("buttons")   
+    deleteButton.textContent = 'не годится';
+    
 
     deleteButton.addEventListener('click', function() {
-        list.removeChild(newItem);
-       //randomInsult = undefined;  //работает, но не так хотел
+        list.removeChild(newItem);       
        document.location.reload();
     })
 
