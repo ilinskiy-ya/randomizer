@@ -31,12 +31,9 @@ let list = document.querySelector('#list');
 myButtons.addEventListener('click', function() {
     let newItem = document.createElement('li');
     newItem.classList.add('item');
-    newItem.textContent = randomInsult;
-    newItem.appendChild;
-    //this.style.color='red';
-    //this.style.background='black';
+    newItem.textContent = randomInsult;    
+   
     this.style.display= "none";    
-    //document.getElementById("myButtons").textContent= "GOTOVO"; 
           
     let deleteButton = document.createElement('button'); 
     deleteButton.classList.add("buttons")   
@@ -44,7 +41,7 @@ myButtons.addEventListener('click', function() {
     
 
     deleteButton.addEventListener('click', function() {
-        list.removeChild(newItem);       
+        list.removeChild(newItem);            
        document.location.reload();
     })
 
