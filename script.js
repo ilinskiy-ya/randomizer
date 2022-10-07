@@ -12,24 +12,19 @@ var variable5 = ["знаний и компитенций.", "непровере�
  "государственно-частных партнёрств.", "цифровых следов грждан.", "нежелательных последствий.", "внезапных открытий."];
 
 var random1 = variable1[Math.floor(Math.random() * 8)];
-
 var random2= variable2[Math.floor(Math.random() * 8)];
-
 var random3 = variable3[Math.floor(Math.random() * 8)];
-
 var random4 = variable4[Math.floor(Math.random() * 8)];
-
 var random5 = variable5[Math.floor(Math.random() * 8)];
 
 var randomInsult = random1 + " " + random2+ " " + random3 + 
 " " + random4+ " " + random5 ;
 
-
 let myButtons = document.querySelector('#myButtons');
 let list = document.querySelector('#list');
 
 myButtons.addEventListener('click', function() {
-    let newItem = document.createElement('li');
+    let newItem = document.createElement('li') ;
     newItem.classList.add('item');
     newItem.textContent = randomInsult;    
    
@@ -37,8 +32,7 @@ myButtons.addEventListener('click', function() {
           
     let deleteButton = document.createElement('button'); 
     deleteButton.classList.add("buttons")   
-    deleteButton.textContent = 'не годится';
-    
+    deleteButton.textContent = 'отмена';    
 
     deleteButton.addEventListener('click', function() {
         list.removeChild(newItem);            
@@ -46,8 +40,6 @@ myButtons.addEventListener('click', function() {
     })
 
     newItem.appendChild(deleteButton);
-    list.appendChild(newItem);
-
-    
+    list.appendChild(newItem);    
 });
 
