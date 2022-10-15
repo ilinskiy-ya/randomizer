@@ -1,5 +1,5 @@
 .wrapper {
-    min-width: 100vh;
+   
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -45,4 +45,5 @@
 .list {
   list-style: none;
   transition: 0.5s; 
+  padding: 0;
 }
